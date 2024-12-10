@@ -21,10 +21,10 @@ function Sidebar() {
     
   return (
     <div className="p-2 md:p-5 bg-gray-100 relative">
-        <div className="lg:hidden ">
+        <div className="md:hidden ">
         <Sheet>
   <SheetTrigger>
-    <MenuIcon className="p-2 hover:opacity-30 " />
+    <MenuIcon className="hover:opacity-30" />
   </SheetTrigger>
   <SheetContent>
     <SheetHeader>
@@ -36,12 +36,10 @@ function Sidebar() {
   </SheetContent>
 </Sheet>
         </div>
-        <div className="inline " >
-          <div className="hidden inline">
-          {MenuOption}
-          </div>
-         
-        </div>
+        <div className="hidden md:inline">
+    {MenuOption}
+</div>
+
         
     </div>
     
